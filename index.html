@@ -1,0 +1,285 @@
+
+<head>
+    <meta charset="utf-8">
+    <title>Fresh Tomatoes!</title>
+
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <style type="text/css" media="screen">
+        body {
+            padding-top: 80px;
+        }
+        #trailer .modal-dialog {
+            margin-top: 200px;
+            width: 640px;
+            height: 480px;
+        }
+        .hanging-close {
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            z-index: 9001;
+        }
+        #trailer-video {
+            width: 100%;
+            height: 100%;
+        }
+        .movie-tile {
+            margin-bottom: 20px;
+            padding-top: 20px;
+        }
+        .movie-tile:hover {
+            background-color: #b3b3b3;
+            cursor: pointer;
+        }
+        .scale-media {
+            padding-bottom: 56.25%;
+            position: relative;
+        }
+        .scale-media iframe {
+            border: none;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            background-color: white;
+        }
+    </style>
+    <script type="text/javascript" charset="utf-8">
+        // Pause the video when the modal is closed
+        $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
+            // Remove the src so the player itself gets removed, as this is the only
+            // reliable way to ensure the video stops playing in IE
+            $("#trailer-video-container").empty();
+        });
+        // Start playing the video whenever the trailer modal is opened
+        $(document).on('click', '.movie-tile', function (event) {
+            var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
+            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+            $("#trailer-video-container").empty().append($("<iframe></iframe>", {
+              'id': 'trailer-video',
+              'type': 'text-html',
+              'src': sourceUrl,
+              'frameborder': 0
+            }));
+        });
+        // Animate in the movies when the page loads
+        $(document).ready(function () {
+          $('.movie-tile').hide().first().show("fast", function showNext() {
+            $(this).next("div").show("fast", showNext);
+          });
+        });
+    </script>
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <!-- Trailer Video Modal -->
+    <div class="modal" id="trailer">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+          </a>
+          <div class="scale-media" id="trailer-video-container">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Page Content -->
+    <div class="container">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">My favorite Movies </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="fkZQ5iXSMs8" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/7/70/Lo_chiamavano_Trinit%C3%A0..._poster.jpg" width="220" height="342">
+    <h2>They Call Me Trinity</h2>
+    <p>A story of two brothers, Trinity and Bambino that will help and defend a Moromon settlement from bandits</p>
+    <p>Release date: May 10 1970</p> 
+    
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="sY1S34973zA" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg" width="220" height="342">
+    <h2>The Godfather</h2>
+    <p>The story of a New Yourk full of crime ruled by the family Corleone</p>
+    <p>Release date: March 15 1972</p> 
+    
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="LcpCRyNo8T8" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/d/d8/Once_Upon_A_Time_In_America1.jpg" width="220" height="342">
+    <h2>One Upon a Time in America</h2>
+    <p>The story of two friends that they are moving from the jews getto to the world organized crime in New York</p>
+    <p>Release date: May 23 1984</p> 
+    
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="6hB3S9bIaco" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg" width="220" height="342">
+    <h2>Shawshank Redemption</h2>
+    <p>The story of a banker sentenced to life for the mordured of his wife and secret lover</p>
+    <p>Release date: September 10 1994</p> 
+    
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="ZL9Q_0JtMNA" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/b/b5/Young_Frankenstein_movie_poster.jpg" width="220" height="342">
+    <h2>Young Frankenstein</h2>
+    <p>A great commedy about Frankenstein</p>
+    <p>Release date: December 15 1974</p> 
+    
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="YDGw1MTEe9k" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/7/7b/Exorcist_ver2.jpg" width="220" height="342">
+    <h2>The Exorcist</h2>
+    <p>two priest trying to exorcism to a 12 years old girl posessed by the evil</p>
+    <p>Release date: December 26 1973</p> 
+    
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="MV4cgs-bPic" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/0/03/TheWarriors_1979_Movie_Poster.jpg" width="220" height="342">
+    <h2>The Warriors</h2>
+    <p>a gang who must survive all nite in a dangerouns New York after some one blame them for a murdered</p>
+    <p>Release date: February 9 1979</p> 
+    
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="PYYZFcvQfRg" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/4/4b/EscapefromNYposter.jpg" width="220" height="342">
+    <h2>Escape from New York</h2>
+    <p>24 hours to save the president of United States of America after some terrorist hijacked the Airforce one and crashed in dangerous manhattan island</p>
+    <p>Release date: July 10 1981</p> 
+    
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="592EiTD2Hgo" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/7/76/Big_Trouble_in_Little_China_Film_Poster.jpg" width="220" height="342">
+    <h2>Big Trouble in Little China</h2>
+    <p>A fantasy story that will see Jack Burton to save the fiance of his friend that has been kidnap and at the same time, save the city of L.A. from an old Evil</p>
+    <p>Release date: Julay 2 1986</p> 
+    
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="LjLamj-b0I8" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Alien_movie_poster.jpg" width="220" height="342">
+    <h2>Alien</h2>
+    <p>A sci-fi horror that will see a crew trapped in their space ship fighting against an alien entity</p>
+    <p>Release date: May 25 1979</p> 
+    
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="qvsgGtivCgs" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/d/d2/Back_to_the_Future.jpg" width="220" height="342">
+    <h2>Back to the Future</h2>
+    <p>the story of Martin Mc. Fly that will travel from past to present to save the life of his friend Doc.</p>
+    <p>Release date: July 3 1985</p> 
+    
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="vntAEVjPBzQ" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Ghostbusters_%281984%29_theatrical_poster.png" width="220" height="342">
+    <h2>Ghostbusters</h2>
+    <p>A great commedy that will see a grea team working together to build a ghost-catching business in New York</p>
+    <p>Release date: July 8 1984</p> 
+    
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="0BLZbrLogTo" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Gladiator_%282000_film_poster%29.png" width="220" height="342">
+    <h2>Gladiator</h2>
+    <p>The story of a great roman general that has been betrayed, becaming a slave he will do anything to gain his opportunity of revenge</p>
+    <p>Release date: May 5 2000</p> 
+    
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="qHhHIbNuok8" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/a/af/Batman_Begins_Poster.jpg" width="220" height="342">
+    <h2>Batman Begins</h2>
+    <p>The original story of Bruce Wayne from the death of his parents to became the Dark Knight that will fight to save Gotham City the cradle of crime</p>
+    <p>Release date: June 15 2005</p> 
+    
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="hJ2j4oWdQtU" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/c/c6/The_Goonies.jpg" width="220" height="342">
+    <h2>The Goonies</h2>
+    <p>An incredible adventure of a group of kids that trying to save their home from demolition, will find an ancient map of that will lead them to find the lost tresure of One Eye Willy</p>
+    <p>Release date: June 7 1985</p> 
+    
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="YoHD9XEInc0" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg" width="220" height="342">
+    <h2>Inception</h2>
+    <p>Leonardo di Caprio will have to implant an idea to a person to be bale to have erased his criminal history and like that be able to get back again to home to see his family</p>
+    <p>Release date: July 16 2010</p> 
+    
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="vKQi3bBA1y8" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/The_Matrix_Poster.jpg/220px-The_Matrix_Poster.jpg" width="220" height="342">
+    <h2>The Matrix</h2>
+    <p>The machine created a virtual fake world, just a small group of rebel will fight again them.</p>
+    <p>Release date: April 8 1999</p> 
+    
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="UeFni9dOv7c" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/Neverendingstoryposter.jpg" width="220" height="342">
+    <h2>The Never Ending Story</h2>
+    <p>A young boy will enter in possess of a special book that will transport him inside an epic fantastic fantasy adventure to fight against something called nothing and save like that the world of Fantasia</p>
+    <p>Release date: April 6 1984</p> 
+    
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="XRcOZZDvMv4" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/Labyrinth_ver2.jpg" width="220" height="342">
+    <h2>Labyrinth</h2>
+    <p>A young teenage girl will have to enter and try to reach the center of an enormous maze before midnight to rescue her infant brother, kidnapped from the Goblin's King</p>
+    <p>Release date: June 27 1984</p> 
+    
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="cnf4h5HT4dc" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/c/c3/The_Lord_of_the_Rings_trilogy_poster.jpg" width="220" height="342">
+    <h2>Lord of the Rings</h2>
+    <p>The incredible fantasy quest of Frodo Beggins and his felloship to try to destroy the One Ring, the ring to rule them all, the ring of Sauron</p>
+    <p>Release date: Dicember 19 2001</p> 
+    
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="k64P4l2Wmeg" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Terminator1984movieposter.jpg/220px-Terminator1984movieposter.jpg" width="220" height="342">
+    <h2>The Terminator</h2>
+    <p>A cyborg sent back in 1984 from 2029 to kill Sarah Connor before will give birth to his son that will be the leader of the rebellion that one day will be  able to defeat the machines</p>
+    <p>Release date: Octoer 26 1984</p> 
+    
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="9gvqpFbRKtQ" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/87/StarWarsMoviePoster1977.jpg/220px-StarWarsMoviePoster1977.jpg" width="220" height="342">
+    <h2>Star Wars: Episode IV - A New Hope</h2>
+    <p>The first Chapter of the greatest triology sci-fi of all time that focus on the rebel alliance guided by pricess Leila to try to destroy the Galactic Empire Station, the Death Star</p>
+    <p>Release date: May 25 1977</p> 
+    
+</div>
+
+    </div>
+  </body>
+</html>
