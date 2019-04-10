@@ -4,39 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Movie Trailers!</title>
-    <link rel="publisher" href="https://mattyleo.github.io/movies.io/" />
-    <meta name="description" content="project favorite moves" />
+    <link rel="publisher" href="https://www.leonimattia.it" />
+    <meta name="description" content="I'm an indipendent freelance front-end web developer. #html #css #js" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="data/css/main.css" />
-    <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript" charset="utf-8">
-    // Pause the video when the modal is closed
-    $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
-    // Remove the src so the player itself gets removed, as this is the only
-    // reliable way to ensure the video stops playing in IE
-    $("#trailer-video-container").empty();
-    });
-    // Start playing the video whenever the trailer modal is opened
-    $(document).on('click', '.movie-tile', function (event) {
-    var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
-    var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
-    $("#trailer-video-container").empty().append($("<iframe></iframe>", {
-    'id': 'trailer-video',
-    'type': 'text-html',
-    'src': sourceUrl,
-    'frameborder': 0
-        }));
-    });
-    // Animate in the movies when the page loads
-    $(document).ready(function () {
-        $('.movie-tile').hide().first().show("fast", function showNext() {
-        $(this).next("div").show("fast", showNext);
-        });
-    });
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="application/javascript" charset="utf-8" src="data/js/main.js"></script>
     </script>
 </head>
 <body>
