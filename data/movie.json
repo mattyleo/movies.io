@@ -1,0 +1,158 @@
+{
+  "movies": [{
+	"id": 1,
+    "title": "They Call me Trinity",
+    "description": "A story of two brothers, Trinity and Bambino that will help and defend a Moromon settlement from bandits",
+    "poster": "trinity.png",
+    "trailer": "https://www.youtube.com/watch?v=fkZQ5iXSMs8",
+    "release": "May 10 1970"
+  }, {
+    "id": 2,
+    "title": "The Godfather",
+    "description": "The story of a New Yourk full of crime ruled by the family Corleone",
+    "poster": "godf.png",
+    "trailer": "https://www.youtube.com/watch?v=sY1S34973zA&t=18s",
+    "release": "March 15 1972"
+  }, {
+	"id": 3,
+    "title": "One Upon a Time in America",
+    "description": "The story of two friends that they are moving from the jews getto to the world organized crime in New York",
+    "poster": "once.png",
+    "trailer": "https://www.youtube.com/watch?v=LcpCRyNo8T8&t=2s",
+    "release": "May 23 1984"
+  }, {
+    "id": 4,
+    "title": "Shawshank Redemption",
+    "description": "The story of a banker sentenced to life for the mordured of his wife and secret lover",
+    "poster": "shawshank.png",
+    "trailer": "https://www.youtube.com/watch?v=6hB3S9bIaco",
+    "release": "September 10 1994"
+  }, {
+	"id": 5,
+    "title": "Young Frankenstein",
+    "description": "A great commedy about Frankenstein",
+    "poster": "franky.png",
+    "trailer": "https://www.youtube.com/watch?v=ZL9Q_0JtMNA&t=95s",
+    "release": "December 15 1974"
+  }, {
+    "id": 6,
+    "title": "The Exorcist",
+    "description": "two priest trying to exorcism to a 12 years old girl posessed by the evil",
+    "poster": "exo.png",
+    "trailer": "https://www.youtube.com/watch?v=YDGw1MTEe9k&t=36s",
+    "release": "December 26 1973"
+  }, {
+	"id": 7,
+    "title": "The Warriors",
+    "description": "A gang who must survive all nite in a dangerouns New York after some one blame them for a murdered",
+    "poster": "warriors.png",
+    "trailer": "ttps://www.youtube.com/watch?v=MV4cgs-bPic&t=8s",
+    "release": "February 9 1979"
+  }, {
+    "id": 8,
+    "title": "scape from New York",
+    "description": "24 hours to save the president of United States of America after some terrorist hijacked the Airforce one and crashed in dangerous manhattan island",
+    "poster": "1197.png",
+    "trailer": "https://www.youtube.com/watch?v=PYYZFcvQfRg",
+    "release": "July 10 1981"
+  }, {
+	"id": 9,
+    "title": "Big Trouble in Little China",
+    "description": "A fantasy story that will see Jack Burton to save the fiance of his friend that has been kidnap and at the same time, save the city of L.A. from an old Evil",
+    "poster": "bigT.png",
+    "trailer": "https://www.youtube.com/watch?v=592EiTD2Hgo&t=65s",
+    "release": "July 2 1986"
+  }, {
+    "id": 10,
+    "title": "Alien",
+    "description": "A sci-fi horror that will see a crew trapped in their space ship fighting against an alien entity",
+    "poster": "alien.png",
+    "trailer": "https://www.youtube.com/watch?v=LjLamj-b0I8",
+    "release": "May 25 1979"
+  }, {
+	"id": 11,
+    "title": "Back to the Future",
+    "description": "the story of Martin Mc. Fly that will travel from past to present to save the life of his friend Doc.",
+    "poster": "back.png",
+    "trailer": "https://www.youtube.com/watch?v=qvsgGtivCgs&t=23s",
+    "release": "July 3 1985"
+  }, {
+    "id": 12,
+    "title": "Ghostbusters",
+    "description": "A great commedy that will see a grea team working together to build a ghost-catching business in New York",
+    "poster": "ghost.png",
+    "trailer": "https://www.youtube.com/watch?v=vntAEVjPBzQ&t=49s",
+    "release": "July 8 1984"
+  }, {
+	"id": 13,
+    "title": "Gladiator",
+    "description": "The story of a great roman general that has been betrayed, becaming a slave he will do anything to gain his opportunity of revenge",
+    "poster": "gladietor.png",
+    "trailer": "https://www.youtube.com/watch?v=0BLZbrLogTo",
+    "release": "May 5 2000"
+  }, {
+    "id": 14,
+    "title": "Batman Begins",
+    "description": "The original story of Bruce Wayne from the death of his parents to became the Dark Knight that will fight to save Gotham City the cradle of crime",
+    "poster": "batman.png",
+    "trailer": "https://www.youtube.com/watch?v=qHhHIbNuok8",
+    "release": "June 15 2005"
+  }, {
+	"id": 15,
+    "title": "The Goonies",
+    "description": "An incredible adventure of a group of kids that trying to save their home from demolition, will find an ancient map of that will lead them to find the lost tresure of One Eye Willy",
+    "poster": "goonies.png",
+    "trailer": "https://www.youtube.com/watch?v=hJ2j4oWdQtU",
+    "release": "June 7 1985"
+  }, {
+    "id": 16,
+    "title": "Inception",
+    "description": "Leonardo di Caprio will have to implant an idea to a person to be bale to have erased his criminal history and like that be able to get back again to home to see his family",
+    "poster": "inception.png",
+    "trailer": "https://www.youtube.com/watch?v=YoHD9XEInc0",
+    "release": "July 16 2010"
+  }, {
+	"id": 17,
+    "title": "The Matrix",
+    "description": "The machine created a virtual fake world, just a small group of rebel will fight again them",
+    "poster": "matrix.png",
+    "trailer": "https://www.youtube.com/watch?v=vKQi3bBA1y8&t=1s",
+    "release": "April 8 1999"
+  }, {
+    "id": 18,
+    "title": "The Never Ending Story",
+    "description": "A young boy will enter in possess of a special book that will transport him inside an epic fantastic fantasy adventure to fight against something called nothing and save like that the world of Fantasia",
+    "poster": "ending.png",
+    "trailer": "https://www.youtube.com/watch?v=UeFni9dOv7c",
+    "release": "April 6 1984"
+  }, {
+	"id": 19,
+    "title": "Labyrinth",
+    "description": "A young teenage girl will have to enter and try to reach the center of an enormous maze before midnight to rescue her infant brother, kidnapped from the Goblin's King",
+    "poster": "labyrinth.png",
+    "trailer": "https://www.youtube.com/watch?v=XRcOZZDvMv4",
+    "release": "June 27 1984"
+  }, {
+    "id": 20,
+    "title": "Lord of the Rings",
+    "description": "The incredible fantasy quest of Frodo Beggins and his felloship to try to destroy the One Ring, the ring to rule them all, the ring of Sauron",
+    "poster": "lord.png",
+    "trailer": "https://www.youtube.com/watch?v=cnf4h5HT4dc",
+    "release": "Dicember 19 2001"
+  }, {
+	"id": 21,
+    "title": "The Terminator",
+    "description": "A cyborg sent back in 1984 from 2029 to kill Sarah Connor before will give birth to his son that will be the leader of the rebellion that one day will be  able to defeat the machines",
+    "poster": "terminator.png",
+    "trailer": "https://www.youtube.com/watch?v=k64P4l2Wmeg&t=17s",
+    "release": "Octoer 26 1984"
+  }, {
+    "id": 22,
+    "title": "Star Wars: Episode IV - A New Hope",
+    "description": "The first Chapter of the greatest triology sci-fi of all time that focus on the rebel alliance guided by pricess Leila to try to destroy the Galactic Empire Station, the Death Star",
+    "poster": "star.png",
+    "trailer": "https://www.youtube.com/watch?v=9gvqpFbRKtQ&t=28s",
+    "release": "May 25 1977"
+  }]
+}
+  
